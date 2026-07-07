@@ -1,0 +1,6 @@
+{
+  "name": "Autobird Garage",
+  "description": "Premium multi-service automotive showroom, service booking, and used cars buy/sell platform. Designed with Apple and Porsche minimalist luxury aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

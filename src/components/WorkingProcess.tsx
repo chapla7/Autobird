@@ -37,7 +37,7 @@ export default function WorkingProcess() {
   };
 
   return (
-    <section id="working-process" className="py-24 bg-white relative overflow-hidden select-none">
+    <section id="working-process" className="py-10 md:py-24 bg-white relative overflow-hidden select-none">
       <div className="absolute top-0 right-0 w-80 h-80 bg-radial-beam opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">

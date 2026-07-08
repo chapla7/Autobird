@@ -23,7 +23,7 @@ export default function FAQSection() {
   const displayedFaqs = isMobile ? faqs.slice(0, 6) : faqs;
 
   return (
-    <section id="faq" className="h-[100vh] overflow-y-auto lg:overflow-visible md:h-auto py-8 md:py-24 bg-white relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="faq" className="py-10 md:py-24 bg-white relative overflow-hidden select-none flex flex-col justify-center">
       <div className="absolute top-0 left-0 w-80 h-80 bg-radial-beam opacity-10 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10">

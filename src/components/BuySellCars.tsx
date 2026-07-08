@@ -91,7 +91,7 @@ export default function BuySellCars() {
   return (
     <section 
       id="buy-sell" 
-      className="py-8 md:py-24 min-h-[130vh] lg:min-h-0 bg-white relative overflow-hidden select-none flex flex-col justify-center"
+      className="py-10 md:py-24 bg-white relative overflow-hidden select-none flex flex-col justify-center"
     >
       <div className="absolute top-0 left-0 w-96 h-96 bg-radial-beam opacity-10 pointer-events-none" />
 

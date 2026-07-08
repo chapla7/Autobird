@@ -32,7 +32,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" className="h-[80vh] overflow-y-auto lg:overflow-visible md:h-auto py-8 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="about" className="py-10 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-beam opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">

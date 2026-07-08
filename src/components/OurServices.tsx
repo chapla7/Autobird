@@ -136,7 +136,7 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
   };
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-white relative overflow-hidden">
+    <section id="services" className="py-10 md:py-24 bg-white relative overflow-hidden">
       {/* Light background beam elements */}
       <div className="absolute top-0 left-0 w-full h-full bg-radial-beam opacity-10 pointer-events-none" />
 

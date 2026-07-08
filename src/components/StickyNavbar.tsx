@@ -5,13 +5,12 @@ import { MessageSquareCode, Calendar, Menu, X, ArrowRight } from "lucide-react";
 export default function StickyNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" ? window.innerWidth < 1024 : false);
 
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 1024);
     };
-    checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
@@ -189,21 +188,21 @@ export default function StickyNavbar() {
               className="fixed right-0 top-0 bottom-0 w-80 bg-[#0B0B0B] text-white shadow-2xl z-50 p-6 flex flex-col justify-between lg:hidden select-none"
             >
               <div>
-                <div className="flex items-center justify-between border-b border-neutral-900/60 pb-5 mb-8">
-                  <div className="flex flex-col items-start gap-1">
+                <div className="relative border-b border-neutral-900/60 pb-5 mb-8 flex flex-col items-center justify-center w-full">
+                  <div className="flex flex-col items-center gap-1 text-center">
                     <img 
                       src="https://i.ibb.co/xSx6BFFy/autobird-logo.png" 
                       alt="Autobird Garage Logo" 
                       className="h-16 w-auto object-contain"
                       referrerPolicy="no-referrer"
                     />
-                    <span className="font-display font-black text-xs tracking-[0.2em] uppercase text-brand-accent mt-2 leading-none">
+                    <span className="font-display font-black text-xs tracking-[0.2em] uppercase text-brand-accent mt-2 leading-none text-center">
                       AUTOBIRD GARAGE
                     </span>
                   </div>
                   <button
                     onClick={() => setMobileMenuOpen(false)}
-                    className="p-2 rounded-xl bg-neutral-900/80 hover:bg-neutral-800 text-neutral-400 hover:text-white transition-all border border-neutral-800/40"
+                    className="absolute right-0 top-0 p-2 rounded-xl bg-neutral-900/80 hover:bg-neutral-800 text-neutral-400 hover:text-white transition-all border border-neutral-800/40"
                   >
                     <X className="w-5 h-5" />
                   </button>

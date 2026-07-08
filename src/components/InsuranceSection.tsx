@@ -51,7 +51,7 @@ export default function InsuranceSection() {
   };
 
   return (
-    <section id="insurance" className="min-h-[130vh] lg:min-h-fit flex flex-col justify-center py-8 md:py-24 bg-black text-white relative overflow-hidden select-none">
+    <section id="insurance" className="py-10 md:py-24 bg-black text-white relative overflow-hidden select-none flex flex-col justify-center">
       {/* Dynamic backdrop glows */}
       <div className="absolute inset-0 bg-radial-beam opacity-40 pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.02] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:30px_30px]" />

@@ -12,7 +12,7 @@ export default function GoogleMapSection() {
   };
 
   return (
-    <section id="map-section" className="h-[80vh] md:h-auto py-6 md:py-20 bg-black text-white relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="map-section" className="py-10 md:py-20 bg-black text-white relative overflow-hidden select-none flex flex-col justify-center">
       {/* Subtle backdrop light */}
       <div className="absolute inset-0 bg-radial-beam opacity-30 pointer-events-none" />
 

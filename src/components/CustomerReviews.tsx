@@ -7,7 +7,7 @@ export default function CustomerReviews() {
   const duplicatedReviews = [...reviews, ...reviews, ...reviews];
 
   return (
-    <section id="reviews" className="h-[75vh] md:h-auto py-6 md:py-24 bg-black text-white overflow-hidden relative select-none flex flex-col justify-center">
+    <section id="reviews" className="py-10 md:py-24 bg-black text-white overflow-hidden relative select-none flex flex-col justify-center">
       {/* Decorative background glows */}
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/[0.02] to-transparent pointer-events-none" />
       <div className="absolute left-0 inset-y-0 w-16 sm:w-32 bg-gradient-to-r from-black via-black/80 to-transparent z-10 pointer-events-none" />

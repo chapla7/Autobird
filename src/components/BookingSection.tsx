@@ -44,7 +44,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
   };
 
   return (
-    <section id="book-now" className="h-[100vh] overflow-y-auto lg:overflow-visible md:h-auto py-6 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="book-now" className="py-10 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
       <div className="absolute inset-0 bg-radial-beam opacity-5 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">

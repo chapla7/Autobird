@@ -45,7 +45,7 @@ export default function Loader({ onComplete }: LoaderProps) {
               <motion.img 
                 src="https://i.ibb.co/xSx6BFFy/autobird-logo.png" 
                 alt="Autobird Garage Logo" 
-                className="w-60 md:w-80 h-auto object-contain drop-shadow-[0_0_25px_rgba(193,18,31,0.5)]"
+                className="w-[236px] md:w-80 h-auto object-contain drop-shadow-[0_0_25px_rgba(193,18,31,0.5)]"
                 referrerPolicy="no-referrer"
                 layoutId="logo-emblem"
                 transition={{ type: "spring", stiffness: 90, damping: 18 }}
@@ -58,7 +58,7 @@ export default function Loader({ onComplete }: LoaderProps) {
                 initial={{ letterSpacing: "0.2em", opacity: 0 }}
                 animate={{ letterSpacing: "0.3em", opacity: 1 }}
                 transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
-                className="font-display font-extrabold text-2xl md:text-3xl tracking-[0.2em] uppercase text-white"
+                className="font-display font-extrabold text-[20px] md:text-3xl tracking-[0.2em] uppercase text-white"
               >
                 AUTOBIRD <span className="text-brand-accent">GARAGE</span>
               </motion.h1>
@@ -66,7 +66,7 @@ export default function Loader({ onComplete }: LoaderProps) {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 0.5, y: 0 }}
                 transition={{ delay: 0.8, duration: 1 }}
-                className="text-xs font-mono tracking-widest uppercase text-gray-400 mt-2"
+                className="text-[8px] md:text-xs font-mono tracking-widest uppercase text-gray-400 mt-2"
               >
                 AUTOMOTIVE EXCELLENCE
               </motion.p>

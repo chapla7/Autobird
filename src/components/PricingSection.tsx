@@ -26,7 +26,7 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
   };
 
   return (
-    <section id="pricing" className="py-16 bg-[#F8F8F6] relative overflow-hidden">
+    <section id="pricing" className="py-10 md:py-24 bg-[#F8F8F6] relative overflow-hidden">
       {/* Decorative gradients */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-beam opacity-10 pointer-events-none" />
 

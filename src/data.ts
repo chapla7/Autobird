@@ -286,7 +286,7 @@ export const pricingTiers: PricingTier[] = [
     features: [
       "Engine Oil flush & top-up",
       "Air filter dust extraction",
-      "Oil filter cleaning",
+      "Oil & Air Filter Change",
       "Brake pad wear query",
       "Coolant & wash fluid top-up",
       "Full 15-point mechanical inspection",

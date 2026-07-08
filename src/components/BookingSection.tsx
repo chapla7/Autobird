@@ -44,7 +44,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
   };
 
   return (
-    <section id="book-now" className="h-[100vh] md:h-auto py-6 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="book-now" className="h-[100vh] overflow-y-auto lg:overflow-visible md:h-auto py-6 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
       <div className="absolute inset-0 bg-radial-beam opacity-5 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
@@ -59,10 +59,10 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                   RESERVE YOUR APPOINTMENT
                 </span>
               </div>
-              <h2 className="font-display font-black text-[22px] sm:text-3xl md:text-5xl text-black tracking-tight leading-none mb-1 md:mb-6">
+              <h2 className="font-display font-black text-[24px] sm:text-3xl md:text-5xl text-black tracking-tight leading-none mb-1 md:mb-6">
                 Book A Slot.
               </h2>
-              <p className="text-neutral-500 font-light text-[8px] sm:text-sm md:text-base leading-normal mb-2 md:mb-10">
+              <p className="text-neutral-500 font-light text-[10px] sm:text-sm md:text-base leading-normal mb-2 md:mb-10">
                 Secure standard diagnostics or major mechanical overhaul booking slots. Our coordinators will contact you within 15 minutes of submission to lock down logistics.
               </p>
 
@@ -111,7 +111,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
               transition={{ duration: 0.8 }}
               className="p-3.5 sm:p-8 md:p-10 rounded-xl sm:rounded-[28px] border border-brand-border/40 bg-white shadow-sm"
             >
-              <h3 className="font-display font-bold text-xs sm:text-lg md:text-xl text-black tracking-tight mb-3 sm:mb-8">
+              <h3 className="font-display font-bold text-[14px] sm:text-lg md:text-xl text-black tracking-tight mb-3 sm:mb-8">
                 Configure Appointment Parameters
               </h3>
 
@@ -121,7 +121,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                 <div className="grid grid-cols-2 gap-2.5 sm:gap-5">
                   {/* Vehicle Type */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Classification *
                     </label>
                     <div className="grid grid-cols-2 gap-1.5 sm:gap-3">
@@ -130,7 +130,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                           key={type}
                           type="button"
                           onClick={() => setVehicleType(type)}
-                          className={`py-1.5 sm:py-3 rounded-lg sm:rounded-xl font-mono text-[9.5px] sm:text-xs font-bold uppercase border transition-all duration-300 ${
+                          className={`py-1.5 sm:py-3 rounded-lg sm:rounded-xl font-mono text-[11.5px] sm:text-xs font-bold uppercase border transition-all duration-300 ${
                             vehicleType === type
                               ? "bg-black border-black text-white"
                               : "bg-neutral-50 border-brand-border/30 text-neutral-500 hover:text-black"
@@ -144,13 +144,13 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
 
                   {/* Active Service selector */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Care Service *
                     </label>
                     <select
                       value={selectedService}
                       onChange={(e) => onSelectService(e.target.value)}
-                      className="w-full bg-[#F8F8F6] border border-brand-border/40 rounded-lg sm:rounded-xl p-1.5 sm:p-3 text-[10px] sm:text-xs text-black focus:outline-none focus:border-black cursor-pointer h-[29px] sm:h-[46px] appearance-none"
+                      className="w-full bg-[#F8F8F6] border border-brand-border/40 rounded-lg sm:rounded-xl p-1.5 sm:p-3 text-[12px] sm:text-xs text-black focus:outline-none focus:border-black cursor-pointer h-[29px] sm:h-[46px] appearance-none"
                     >
                       <option value="">Select Service / Custom Care</option>
                       {services.map((item) => (
@@ -170,7 +170,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                 <div className="grid grid-cols-2 gap-2.5 sm:gap-5">
                   {/* Owner name */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Owner Name *
                     </label>
                     <div className="relative">
@@ -181,14 +181,14 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Rohan Gupta"
-                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[10px] sm:text-xs text-black focus:outline-none transition-colors"
+                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[12px] sm:text-xs text-black focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
 
                   {/* Owner phone */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       WhatsApp Contact *
                     </label>
                     <div className="relative">
@@ -199,7 +199,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         placeholder="WhatsApp Number"
-                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[10px] sm:text-xs text-black focus:outline-none transition-colors"
+                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[12px] sm:text-xs text-black focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                 <div className="grid grid-cols-2 gap-2.5 sm:gap-5">
                   {/* Brand */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Manufacturer *
                     </label>
                     <div className="relative">
@@ -220,14 +220,14 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                         value={vehicleBrand}
                         onChange={(e) => setVehicleBrand(e.target.value)}
                         placeholder="e.g., Porsche"
-                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[10px] sm:text-xs text-black focus:outline-none transition-colors"
+                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[12px] sm:text-xs text-black focus:outline-none transition-colors"
                       />
                     </div>
                   </div>
 
                   {/* Model */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Model / Variant *
                     </label>
                     <input
@@ -236,7 +236,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                       value={vehicleModel}
                       onChange={(e) => setVehicleModel(e.target.value)}
                       placeholder="e.g., Macan S"
-                      className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl p-1.5 sm:p-3 text-[10px] sm:text-xs text-black focus:outline-none transition-colors h-[29px] sm:h-[46px]"
+                      className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl p-1.5 sm:p-3 text-[12px] sm:text-xs text-black focus:outline-none transition-colors h-[29px] sm:h-[46px]"
                     />
                   </div>
                 </div>
@@ -245,7 +245,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                 <div className="grid grid-cols-2 gap-2.5 sm:gap-5">
                   {/* Date selection */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Desired Date *
                     </label>
                     <div className="relative">
@@ -255,20 +255,20 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                         required
                         value={bookingDate}
                         onChange={(e) => setBookingDate(e.target.value)}
-                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[10px] sm:text-xs text-black focus:outline-none transition-colors cursor-pointer"
+                        className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[12px] sm:text-xs text-black focus:outline-none transition-colors cursor-pointer"
                       />
                     </div>
                   </div>
 
                   {/* Time slot selection */}
                   <div>
-                    <label className="text-[7px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
+                    <label className="text-[9px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 tracking-wider">
                       Booking Hours
                     </label>
                     <select
                       value={timeSlot}
                       onChange={(e) => setTimeSlot(e.target.value)}
-                      className="w-full bg-[#F8F8F6] border border-brand-border/40 rounded-lg sm:rounded-xl p-1.5 sm:p-3 text-[10px] sm:text-xs text-black focus:outline-none focus:border-black cursor-pointer h-[29px] sm:h-[46px] appearance-none"
+                      className="w-full bg-[#F8F8F6] border border-brand-border/40 rounded-lg sm:rounded-xl p-1.5 sm:p-3 text-[12px] sm:text-xs text-black focus:outline-none focus:border-black cursor-pointer h-[29px] sm:h-[46px] appearance-none"
                     >
                       <option value="09:00 AM - 11:00 AM">09:00 AM - 11:00 AM</option>
                       <option value="11:00 AM - 01:00 PM">11:00 AM - 01:00 PM</option>
@@ -283,8 +283,8 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                 <div className="border-t border-brand-border/20 pt-2 mt-1">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h4 className="font-display font-bold text-[10px] sm:text-xs text-black leading-none">Pickup & Drop</h4>
-                      <p className="text-[8px] sm:text-[10px] text-neutral-400 font-light mt-0.5">Complimentary vehicle logistics mapping.</p>
+                      <h4 className="font-display font-bold text-[12px] sm:text-xs text-black leading-none">Pickup & Drop</h4>
+                      <p className="text-[10px] sm:text-[10px] text-neutral-400 font-light mt-0.5">Complimentary vehicle logistics mapping.</p>
                     </div>
                     
                     <button
@@ -320,7 +320,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                             rows={1}
                             placeholder="Specify Pickup Address *"
                             required={pickupEnabled}
-                            className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[10px] sm:text-xs text-black focus:outline-none transition-colors resize-none"
+                            className="w-full bg-[#F8F8F6] border border-brand-border/40 focus:border-black rounded-lg sm:rounded-xl py-1.5 sm:py-3 pl-7 sm:pl-10 pr-2 sm:pr-4 text-[12px] sm:text-xs text-black focus:outline-none transition-colors resize-none"
                           />
                         </div>
                       </motion.div>
@@ -331,7 +331,7 @@ export default function BookingSection({ selectedService, onSelectService }: Boo
                 {/* Submit scheduling button */}
                 <button
                   type="submit"
-                  className="w-full py-2.5 sm:py-4 bg-brand-accent hover:bg-brand-accent-hover text-white text-[9.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 shadow-md hover:shadow-lg active:scale-95"
+                  className="w-full py-2.5 sm:py-4 bg-brand-accent hover:bg-brand-accent-hover text-white text-[11.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 shadow-md hover:shadow-lg active:scale-95"
                 >
                   Confirm Appointment via WhatsApp
                 </button>

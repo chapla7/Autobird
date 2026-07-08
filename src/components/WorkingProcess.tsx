@@ -101,13 +101,13 @@ export default function WorkingProcess() {
 
               {/* Video descriptive text metadata */}
               <div className="absolute bottom-2 left-2 right-2 sm:bottom-8 sm:left-8 sm:right-8 z-20">
-                <span className="text-[6px] sm:text-[10px] font-mono tracking-widest text-brand-accent uppercase font-black block mb-0.5 sm:mb-2">
+                <span className="text-[5px] sm:text-[10px] font-mono tracking-widest text-brand-accent uppercase font-black block mb-0.5 sm:mb-2">
                   WORKSHOP INSIGHTS
                 </span>
-                <h3 className="font-display font-black text-[9px] sm:text-xl md:text-3xl text-white tracking-tight leading-none mb-1 sm:mb-3">
+                <h3 className="font-display font-black text-[7.5px] sm:text-xl md:text-3xl text-white tracking-tight leading-none mb-1 sm:mb-3">
                   {activeVideo.title}
                 </h3>
-                <p className="text-[7.5px] sm:text-sm text-neutral-300 font-light leading-normal max-w-xl">
+                <p className="hidden sm:block text-[7.5px] sm:text-sm text-neutral-300 font-light leading-normal max-w-xl">
                   {activeVideo.description}
                 </p>
               </div>

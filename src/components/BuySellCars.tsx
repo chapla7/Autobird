@@ -109,7 +109,7 @@ export default function BuySellCars() {
                   CERTIFIED MULTI-BRAND TRADING
                 </span>
               </div>
-              <h2 className="font-display font-black text-[24px] sm:text-3xl md:text-5xl text-black tracking-tight leading-none mb-2 sm:mb-4">
+              <h2 className="font-display font-black text-[26px] sm:text-3xl md:text-5xl text-black tracking-tight leading-none mb-2 sm:mb-4">
                 Pre-Owned Car Studio.
               </h2>
               <p className="text-neutral-500 font-light text-[8.5px] sm:text-sm md:text-base leading-relaxed max-w-lg">
@@ -166,7 +166,7 @@ export default function BuySellCars() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5">
                 {/* Name */}
                 <div className="relative">
-                  <label className="text-[8px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
+                  <label className="text-[10px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
                     Full Name *
                   </label>
                   <div className="relative">
@@ -177,14 +177,14 @@ export default function BuySellCars() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="e.g., Vikram Malhotra"
-                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[11px] sm:text-sm text-black focus:outline-none transition-colors"
+                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[13px] sm:text-sm text-black focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
 
                 {/* Phone */}
                 <div className="relative">
-                  <label className="text-[8px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
+                  <label className="text-[10px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
                     WhatsApp Phone *
                   </label>
                   <div className="relative">
@@ -195,7 +195,7 @@ export default function BuySellCars() {
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       placeholder="e.g., +91 99887 76655"
-                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[11px] sm:text-sm text-black focus:outline-none transition-colors"
+                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[13px] sm:text-sm text-black focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
@@ -205,7 +205,7 @@ export default function BuySellCars() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-5">
                 {/* Vehicle Model */}
                 <div className="relative">
-                  <label className="text-[8px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
+                  <label className="text-[10px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
                     {activeTab === "buy" ? "Desired Vehicle Model *" : "Current Vehicle Model *"}
                   </label>
                   <div className="relative">
@@ -216,14 +216,14 @@ export default function BuySellCars() {
                       value={vehicleModel}
                       onChange={(e) => setVehicleModel(e.target.value)}
                       placeholder={activeTab === "buy" ? "e.g., Porsche Macan or Toyota Fortuner" : "e.g., Honda City 2021 VMT"}
-                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[11px] sm:text-sm text-black focus:outline-none transition-colors"
+                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[13px] sm:text-sm text-black focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
 
                 {/* Vehicle Number (Optional/Required for sell) */}
                 <div className="relative">
-                  <label className="text-[8px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
+                  <label className="text-[10px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
                     {activeTab === "sell" ? "Vehicle Number *" : "Vehicle Number (Optional)"}
                   </label>
                   <div className="relative">
@@ -234,7 +234,7 @@ export default function BuySellCars() {
                       value={vehicleNo}
                       onChange={(e) => setVehicleNo(e.target.value)}
                       placeholder="e.g., MH 12 AB 1234"
-                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[11px] sm:text-sm text-black focus:outline-none transition-colors uppercase"
+                      className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[13px] sm:text-sm text-black focus:outline-none transition-colors uppercase"
                     />
                   </div>
                 </div>
@@ -242,7 +242,7 @@ export default function BuySellCars() {
 
               {/* City Input */}
               <div className="relative">
-                <label className="text-[8px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
+                <label className="text-[10px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
                   Location City *
                 </label>
                 <div className="relative">
@@ -253,14 +253,14 @@ export default function BuySellCars() {
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     placeholder="e.g., Thane, Mumbai, or Pune"
-                    className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[11px] sm:text-sm text-black focus:outline-none transition-colors"
+                    className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl py-2 sm:py-3.5 pl-9 sm:pl-11 pr-3 sm:pr-4 text-[13px] sm:text-sm text-black focus:outline-none transition-colors"
                   />
                 </div>
               </div>
 
               {/* Custom Message */}
               <div>
-                <label className="text-[8px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
+                <label className="text-[10px] sm:text-[9px] font-mono font-bold uppercase text-neutral-400 block mb-1 sm:mb-2 tracking-wider">
                   {activeTab === "buy" ? "Specific Requirements" : "Condition & Accolades"}
                 </label>
                 <textarea
@@ -268,14 +268,14 @@ export default function BuySellCars() {
                   onChange={(e) => setMessage(e.target.value)}
                   rows={2}
                   placeholder={activeTab === "buy" ? "e.g., Looking for immediate purchase, single-owner only." : "e.g., Pristine condition, fully serviced by authorized dealer."}
-                  className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl p-3 sm:p-4 text-[11px] sm:text-sm text-black focus:outline-none transition-colors resize-none"
+                  className="w-full bg-white border border-brand-border/50 focus:border-black rounded-lg sm:rounded-xl p-3 sm:p-4 text-[13px] sm:text-sm text-black focus:outline-none transition-colors resize-none"
                 />
               </div>
 
               {/* Action Trigger Button - single line text & smaller font */}
               <button
                 type="submit"
-                className="w-full mt-2 py-3 bg-black hover:bg-neutral-900 text-white text-[9.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-95 premium-glow-hover"
+                className="w-full mt-2 py-3 bg-black hover:bg-neutral-900 text-white text-[11.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-95 premium-glow-hover"
               >
                 <span>Send WhatsApp Request</span>
                 <ArrowUpRight className="w-3.5 h-3.5 text-brand-accent shrink-0" />
@@ -288,7 +288,7 @@ export default function BuySellCars() {
           <div className="lg:col-span-5 flex flex-col items-center justify-center relative w-full mt-4 lg:mt-0">
             
             {/* Swiper Stack */}
-            <div className="relative h-[360px] sm:h-[480px] lg:h-[520px] w-full max-w-sm flex items-center justify-center">
+            <div className="relative h-[480px] sm:h-[480px] lg:h-[520px] w-full max-w-sm flex items-center justify-center">
               {showcaseCars.map((car, idx) => {
                 const isFront = idx === activeCarIdx;
                 const total = showcaseCars.length;
@@ -315,7 +315,7 @@ export default function BuySellCars() {
                     }}
                     transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                     onClick={() => window.open(car.link, "_blank")}
-                    className={`absolute w-full h-[330px] sm:h-[440px] lg:h-[480px] rounded-[24px] sm:rounded-[28px] overflow-hidden border cursor-pointer select-none shadow-xl transition-colors duration-500 bg-black ${
+                    className={`absolute w-full h-[440px] sm:h-[440px] lg:h-[480px] rounded-[24px] sm:rounded-[28px] overflow-hidden border cursor-pointer select-none shadow-xl transition-colors duration-500 bg-black ${
                       isFront ? "border-brand-accent/40 shadow-brand-accent/5" : "border-neutral-800/40"
                     }`}
                   >

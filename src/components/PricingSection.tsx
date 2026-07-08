@@ -40,10 +40,10 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
               COMPETITIVE FLAT RATES
             </span>
           </div>
-          <h2 className="font-display font-black text-[20px] sm:text-3xl md:text-4xl lg:text-5xl text-black tracking-tight leading-none">
+          <h2 className="font-display font-black text-[21px] sm:text-3xl md:text-4xl lg:text-5xl text-black tracking-tight leading-none">
             Flat Transparent Pricing.
           </h2>
-          <p className="mt-2 text-neutral-500 font-light text-[9px] sm:text-sm md:text-base leading-relaxed">
+          <p className="mt-2 text-neutral-500 font-light text-[10px] sm:text-sm md:text-base leading-relaxed">
             Choose a standard care tier designed for your vehicle’s specific mileage. No surprise add-ons. Full itemized video confirmations before any work.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8, delay: idx * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className={`relative p-4 sm:p-6 md:p-8 rounded-[20px] border flex flex-col justify-between transition-all duration-500 group ${
+                className={`relative p-4 sm:p-6 md:p-8 rounded-[20px] border flex flex-col justify-between transition-all duration-500 group w-[90%] mx-auto lg:w-full lg:mx-0 ${
                   tier.isPopular
                     ? "bg-black border-black text-white shadow-xl lg:-translate-y-2 shadow-black/10"
                     : "bg-white border-brand-border/40 text-black shadow-sm hover:shadow-md"
@@ -74,7 +74,7 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
                 <div>
                   {/* Category Name */}
                   <span
-                    className={`text-[8px] sm:text-[10px] font-mono font-bold tracking-[0.25em] uppercase block mb-1 sm:mb-2 ${
+                    className={`text-[9px] sm:text-[10px] font-mono font-bold tracking-[0.25em] uppercase block mb-1 sm:mb-2 ${
                       tier.isPopular ? "text-brand-accent" : "text-neutral-400"
                     }`}
                   >
@@ -83,22 +83,22 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
 
                   {/* Pricing and description */}
                   <div className="flex items-baseline gap-1 mb-1.5 sm:mb-3">
-                    <span className="font-display font-black text-2xl sm:text-4xl tracking-tight">
+                    <span className="font-display font-black text-[25px] sm:text-4xl tracking-tight">
                       {tier.price}
                     </span>
-                    <span className={`text-[8px] sm:text-[10px] font-mono ${tier.isPopular ? "text-neutral-400" : "text-neutral-500"}`}>
+                    <span className={`text-[9px] sm:text-[10px] font-mono ${tier.isPopular ? "text-neutral-400" : "text-neutral-500"}`}>
                       / standard package
                     </span>
                   </div>
 
-                  <p className={`text-[9px] sm:text-xs font-light leading-normal mb-3 sm:mb-6 border-b pb-2 sm:pb-4 ${
+                  <p className={`text-[10px] sm:text-xs font-light leading-normal mb-3 sm:mb-6 border-b pb-2 sm:pb-4 ${
                     tier.isPopular ? "text-neutral-400 border-neutral-800" : "text-neutral-500 border-neutral-100"
                   }`}>
                     {tier.description}
                   </p>
 
                   {/* Inclusions list */}
-                  <h4 className="text-[8px] sm:text-[9px] font-mono font-bold tracking-wider uppercase text-neutral-400 mb-2 sm:mb-3">
+                  <h4 className="text-[9px] sm:text-[9px] font-mono font-bold tracking-wider uppercase text-neutral-400 mb-2 sm:mb-3">
                     KEY CHECKLIST DETAILS:
                   </h4>
 
@@ -110,7 +110,7 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
                         }`}>
                           <Check className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
                         </div>
-                        <span className={`text-[9px] sm:text-xs font-medium tracking-wide ${
+                        <span className={`text-[10px] sm:text-xs font-medium tracking-wide ${
                           tier.isPopular ? "text-neutral-300" : "text-neutral-700"
                         }`}>
                           {feature}
@@ -123,7 +123,7 @@ export default function PricingSection({ onSelectService }: PricingSectionProps)
                 {/* Booking Button CTA */}
                 <button
                   onClick={() => handleSelectPackage(`${tier.name} (${tier.price})`)}
-                  className={`w-full py-2 sm:py-3 text-[8px] sm:text-[10px] font-mono font-bold tracking-widest uppercase rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-95 ${
+                  className={`w-full py-2 sm:py-3 text-[9px] sm:text-[10px] font-mono font-bold tracking-widest uppercase rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 active:scale-95 ${
                     tier.isPopular
                       ? "bg-brand-accent hover:bg-brand-accent-hover text-white shadow-md shadow-brand-accent/15 hover:shadow-brand-accent/25"
                       : "bg-black hover:bg-neutral-900 text-white"

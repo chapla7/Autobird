@@ -113,28 +113,28 @@ export default function WhyChooseUs() {
                     {/* Left content block */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
-                        <span className="text-[6px] sm:text-[10px] font-mono font-bold text-neutral-400">
+                        <span className="text-[8px] sm:text-[10px] font-mono font-bold text-neutral-400">
                           {details.category}
                         </span>
                         <span className="w-0.5 h-0.5 sm:w-1 sm:h-1 rounded-full bg-neutral-300" />
-                        <span className="text-[6px] sm:text-[10px] font-mono font-bold text-brand-accent">
+                        <span className="text-[8px] sm:text-[10px] font-mono font-bold text-brand-accent">
                           0{card.id}
                         </span>
                       </div>
-                      <h4 className="font-display font-bold text-[8px] sm:text-sm text-neutral-900 mt-0.5 sm:mt-1">
+                      <h4 className="font-display font-bold text-[10px] sm:text-sm text-neutral-900 mt-0.5 sm:mt-1">
                         {card.title}
                       </h4>
-                      <p className="text-[6.5px] sm:text-xs text-neutral-500 font-light mt-0.5 sm:mt-1 leading-relaxed">
+                      <p className="text-[8.5px] sm:text-xs text-neutral-500 font-light mt-0.5 sm:mt-1 leading-relaxed">
                         {card.description}
                       </p>
                     </div>
 
                     {/* Right status block */}
                     <div className="flex flex-col items-end justify-between self-stretch shrink-0 text-right">
-                      <span className="text-[6px] sm:text-[10px] font-mono text-neutral-400">
+                      <span className="text-[8px] sm:text-[10px] font-mono text-neutral-400">
                         {details.badge}
                       </span>
-                      <span className={`text-[5px] sm:text-[9px] font-mono font-black tracking-wider uppercase px-1 py-0.5 sm:px-2 rounded ${details.color}`}>
+                      <span className={`text-[7px] sm:text-[9px] font-mono font-black tracking-wider uppercase px-1 py-0.5 sm:px-2 rounded ${details.color}`}>
                         {details.status}
                       </span>
                     </div>

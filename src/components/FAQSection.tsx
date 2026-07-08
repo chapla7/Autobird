@@ -4,7 +4,7 @@ import { Plus, Minus, HelpCircle, ArrowRight } from "lucide-react";
 import { faqs } from "../data";
 
 export default function FAQSection() {
-  const [openIdx, setOpenIdx] = useState<number | null>(0);
+  const [openIdx, setOpenIdx] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function FAQSection() {
   const displayedFaqs = isMobile ? faqs.slice(0, 6) : faqs;
 
   return (
-    <section id="faq" className="min-h-[60vh] md:h-auto py-8 md:py-24 bg-white relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="faq" className="h-[100vh] overflow-y-auto lg:overflow-visible md:h-auto py-8 md:py-24 bg-white relative overflow-hidden select-none flex flex-col justify-center">
       <div className="absolute top-0 left-0 w-80 h-80 bg-radial-beam opacity-10 pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 md:px-6 relative z-10">
@@ -32,14 +32,14 @@ export default function FAQSection() {
         <div className="text-center mb-6 md:mb-16 max-w-2xl mx-auto">
           <div className="inline-flex items-center gap-2 mb-1 sm:mb-4">
             <span className="w-1.5 h-1.5 bg-brand-accent rounded-full animate-ping" />
-            <span className="text-[7px] sm:text-[10px] md:text-xs font-mono font-bold tracking-[0.2em] uppercase text-brand-accent">
+            <span className="text-[8.5px] sm:text-[10px] md:text-xs font-mono font-bold tracking-[0.2em] uppercase text-brand-accent">
               GOT QUESTIONS?
             </span>
           </div>
-          <h2 className="font-display font-black text-[18px] sm:text-3xl md:text-5xl text-black tracking-tight leading-none mb-1 sm:mb-4">
+          <h2 className="font-display font-black text-[19.5px] sm:text-3xl md:text-5xl text-black tracking-tight leading-none mb-1 sm:mb-4">
             Frequently Asked.
           </h2>
-          <p className="text-neutral-500 font-light text-[8px] sm:text-sm md:text-base leading-normal">
+          <p className="text-neutral-500 font-light text-[9.5px] sm:text-sm md:text-base leading-normal">
             Have questions regarding diagnostic timelines, cashless coverage, or certified used car valuations? Read our quick reference responses.
           </p>
         </div>
@@ -59,10 +59,10 @@ export default function FAQSection() {
                   className="w-full text-left p-2.5 sm:p-6 flex items-center justify-between gap-3 sm:gap-4 group focus:outline-none"
                 >
                   <div className="flex items-center gap-2 sm:gap-4">
-                    <span className="font-mono text-[8px] sm:text-xs text-neutral-400 group-hover:text-black transition-colors font-bold shrink-0">
+                    <span className="font-mono text-[9.5px] sm:text-xs text-neutral-400 group-hover:text-black transition-colors font-bold shrink-0">
                       {idx < 9 ? `0${idx + 1}` : idx + 1}
                     </span>
-                    <span className="font-display font-bold text-[10.5px] sm:text-sm md:text-base text-black group-hover:text-brand-accent transition-colors tracking-tight leading-snug">
+                    <span className="font-display font-bold text-[12px] sm:text-sm md:text-base text-black group-hover:text-brand-accent transition-colors tracking-tight leading-snug">
                       {faq.question}
                     </span>
                   </div>
@@ -89,7 +89,7 @@ export default function FAQSection() {
                       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                     >
                       <div className="px-2.5 pb-2.5 sm:px-6 sm:pb-6 pt-1 border-t border-brand-border/10">
-                        <p className="text-neutral-600 font-light text-[9.5px] sm:text-sm leading-relaxed max-w-3xl pl-4 sm:pl-8">
+                        <p className="text-neutral-600 font-light text-[11px] sm:text-sm leading-relaxed max-w-3xl pl-4 sm:pl-8">
                           {faq.answer}
                         </p>
                       </div>
@@ -104,14 +104,14 @@ export default function FAQSection() {
         {/* FAQ Footer block */}
         <div className="mt-4 sm:mt-12 text-center p-3 sm:p-6 rounded-xl sm:rounded-2xl bg-black text-white flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-center sm:text-left">
-            <h4 className="font-display font-bold text-[10.5px] sm:text-sm tracking-tight">Still have custom queries?</h4>
-            <p className="text-[8.5px] sm:text-xs text-neutral-400 font-light mt-0.5">Connect with our workshop leads directly.</p>
+            <h4 className="font-display font-bold text-[12px] sm:text-sm tracking-tight">Still have custom queries?</h4>
+            <p className="text-[10px] sm:text-xs text-neutral-400 font-light mt-0.5">Connect with our workshop leads directly.</p>
           </div>
           <a
             href="https://wa.me/919892205127"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 px-3 py-2 bg-brand-accent hover:bg-brand-accent-hover text-white text-[9.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all"
+            className="flex items-center gap-1.5 px-3 py-2 bg-brand-accent hover:bg-brand-accent-hover text-white text-[11px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all"
           >
             <span>Ask via WhatsApp</span>
             <ArrowRight className="w-3.5 h-3.5 sm:w-4.5 sm:h-4.5" />

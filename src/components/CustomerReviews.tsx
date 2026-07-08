@@ -32,11 +32,11 @@ export default function CustomerReviews() {
 
       {/* Infinite Horizontal Scrolling Carousel */}
       <div className="relative w-full flex items-center overflow-hidden py-2 sm:py-4 border-y border-neutral-900">
-        <div className="flex gap-2 sm:gap-4 md:gap-8 shrink-0 min-w-full animate-slide" style={{ animationDuration: "65s" }}>
+        <div className="flex gap-2 sm:gap-4 md:gap-8 shrink-0 min-w-full animate-slide" style={{ animationDuration: "105s" }}>
           {duplicatedReviews.map((review, idx) => (
             <div
               key={idx}
-              className="w-[54vw] md:w-96 bg-white border border-brand-border/10 rounded-xl md:rounded-[24px] p-2.5 sm:p-4 md:p-6 shrink-0 flex flex-col justify-between hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-300 relative group text-black"
+              className="w-[58.8vw] md:w-96 bg-white border border-brand-border/10 rounded-xl md:rounded-[24px] p-2.5 sm:p-4 md:p-6 shrink-0 flex flex-col justify-between hover:border-brand-accent/30 hover:shadow-2xl hover:shadow-brand-accent/5 transition-all duration-300 relative group text-black"
             >
               {/* Inner content */}
               <div>

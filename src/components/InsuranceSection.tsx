@@ -51,7 +51,7 @@ export default function InsuranceSection() {
   };
 
   return (
-    <section id="insurance" className="py-8 md:py-24 bg-black text-white relative overflow-hidden select-none">
+    <section id="insurance" className="min-h-[130vh] lg:min-h-fit flex flex-col justify-center py-8 md:py-24 bg-black text-white relative overflow-hidden select-none">
       {/* Dynamic backdrop glows */}
       <div className="absolute inset-0 bg-radial-beam opacity-40 pointer-events-none" />
       <div className="absolute inset-0 opacity-[0.02] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:30px_30px]" />
@@ -166,10 +166,10 @@ export default function InsuranceSection() {
                   <ClipboardCheck className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-[13px] sm:text-lg md:text-xl text-white tracking-tight">
+                  <h3 className="font-display font-bold text-[15px] sm:text-lg md:text-xl text-white tracking-tight">
                     Instant Insurance Inquiry
                   </h3>
-                  <p className="text-[8px] sm:text-xs text-neutral-500 font-light mt-0.5">
+                  <p className="text-[10px] sm:text-xs text-neutral-500 font-light mt-0.5">
                     Pre-select benefit from swiper or adjust parameters below.
                   </p>
                 </div>
@@ -180,7 +180,7 @@ export default function InsuranceSection() {
                 
                 {/* Vehicle Type Selector */}
                 <div>
-                  <label className="text-[8px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
+                  <label className="text-[10px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
                     Vehicle Type *
                   </label>
                   <div className="grid grid-cols-2 gap-2 sm:gap-3">
@@ -189,7 +189,7 @@ export default function InsuranceSection() {
                         key={type}
                         type="button"
                         onClick={() => setVehicleType(type)}
-                        className={`py-1.5 sm:py-3 rounded-lg sm:rounded-xl font-mono text-[9px] sm:text-xs font-bold uppercase border transition-all duration-300 ${
+                        className={`py-1.5 sm:py-3 rounded-lg sm:rounded-xl font-mono text-[11px] sm:text-xs font-bold uppercase border transition-all duration-300 ${
                           vehicleType === type
                             ? "bg-brand-accent border-brand-accent text-white"
                             : "bg-neutral-900/60 border-neutral-800 text-neutral-400 hover:text-white"
@@ -203,7 +203,7 @@ export default function InsuranceSection() {
 
                 {/* Owner Name Input */}
                 <div>
-                  <label className="text-[8px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
+                  <label className="text-[10px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
                     Owner Name *
                   </label>
                   <input
@@ -212,14 +212,14 @@ export default function InsuranceSection() {
                     value={ownerName}
                     onChange={(e) => setOwnerName(e.target.value)}
                     placeholder="Enter owner full name"
-                    className="w-full bg-neutral-900/60 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[10px] sm:text-sm text-white placeholder-neutral-600 focus:outline-none transition-colors"
+                    className="w-full bg-neutral-900/60 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[12px] sm:text-sm text-white placeholder-neutral-600 focus:outline-none transition-colors"
                   />
                 </div>
 
                 {/* Vehicle Number & Phone Number Row */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                   <div>
-                    <label className="text-[8px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
+                    <label className="text-[10px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
                       Vehicle Number *
                     </label>
                     <input
@@ -228,12 +228,12 @@ export default function InsuranceSection() {
                       value={vehicleNo}
                       onChange={(e) => setVehicleNo(e.target.value)}
                       placeholder="e.g., MH 12 AB 1234"
-                      className="w-full bg-neutral-900/60 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[10px] sm:text-sm text-white placeholder-neutral-600 focus:outline-none transition-colors uppercase"
+                      className="w-full bg-neutral-900/60 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[12px] sm:text-sm text-white placeholder-neutral-600 focus:outline-none transition-colors uppercase"
                     />
                   </div>
 
                   <div>
-                    <label className="text-[8px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
+                    <label className="text-[10px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
                       WhatsApp Phone Number *
                     </label>
                     <input
@@ -242,20 +242,20 @@ export default function InsuranceSection() {
                       value={phoneNo}
                       onChange={(e) => setPhoneNo(e.target.value)}
                       placeholder="e.g., +91 99887 76655"
-                      className="w-full bg-neutral-900/60 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[10px] sm:text-sm text-white placeholder-neutral-600 focus:outline-none transition-colors"
+                      className="w-full bg-neutral-900/60 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[12px] sm:text-sm text-white placeholder-neutral-600 focus:outline-none transition-colors"
                     />
                   </div>
                 </div>
 
                 {/* Insurance Type Selector */}
                 <div>
-                  <label className="text-[8px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
+                  <label className="text-[10px] sm:text-[10px] font-mono tracking-wider uppercase text-neutral-400 block mb-1 sm:mb-2">
                     Required Policy Type
                   </label>
                   <select
                     value={insuranceType}
                     onChange={(e) => setInsuranceType(e.target.value)}
-                    className="w-full bg-neutral-900 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[10px] sm:text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer"
+                    className="w-full bg-neutral-900 border border-neutral-800 focus:border-brand-accent/40 rounded-lg sm:rounded-xl p-2 sm:p-3.5 text-[12px] sm:text-sm text-white focus:outline-none transition-colors appearance-none cursor-pointer"
                   >
                     <option value="Comprehensive">Comprehensive First Party Care</option>
                     <option value="Zero Depreciation">Zero Depreciation add-on</option>
@@ -268,7 +268,7 @@ export default function InsuranceSection() {
                 {/* Submit button (Submits to WhatsApp) */}
                 <button
                   type="submit"
-                  className="w-full py-2.5 sm:py-4 bg-brand-accent hover:bg-brand-accent-hover text-white text-[9px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-brand-accent/15 hover:shadow-brand-accent/25 active:scale-95 mt-2 sm:mt-4"
+                  className="w-full py-2.5 sm:py-4 bg-brand-accent hover:bg-brand-accent-hover text-white text-[11px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-brand-accent/15 hover:shadow-brand-accent/25 active:scale-95 mt-2 sm:mt-4"
                 >
                   <PhoneCall className="w-3 h-3 sm:w-4 sm:h-4" />
                   Generate WhatsApp Inquiry

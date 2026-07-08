@@ -70,19 +70,19 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
         {/* Service Specs Content */}
         <div className={isMobile ? "p-2.5" : "p-5 sm:p-8 md:p-10"}>
           <h3 className={`font-display font-black text-black tracking-tight leading-none ${
-            isMobile ? "text-[12px] mb-1.5" : "text-xl md:text-3xl mb-3 sm:mb-4"
+            isMobile ? "text-[14px] mb-1.5" : "text-xl md:text-3xl mb-3 sm:mb-4"
           }`}>
             {service.title} Details
           </h3>
           
-          <p className={`text-neutral-600 font-light leading-relaxed border-b border-brand-border/40 ${
-            isMobile ? "text-[8px] mb-2.5 pb-2" : "text-xs sm:text-sm md:text-base mb-5 sm:mb-8 pb-4 sm:pb-6"
-          }`}>
-            {service.overview}
-          </p>
+          {!isMobile && (
+            <p className="text-neutral-600 font-light leading-relaxed border-b border-brand-border/40 text-xs sm:text-sm md:text-base mb-5 sm:mb-8 pb-4 sm:pb-6">
+              {service.overview}
+            </p>
+          )}
 
           <h4 className={`font-display font-bold uppercase text-neutral-400 tracking-wider ${
-            isMobile ? "text-[7px] mb-1.5" : "text-[10px] sm:text-xs mb-3 sm:mb-4"
+            isMobile ? "text-[9px] mb-1.5" : "text-[10px] sm:text-xs mb-3 sm:mb-4"
           }`}>
             WHAT IS COMPREHENSIVELY INCLUDED:
           </h4>
@@ -95,7 +95,7 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
             {service.included.map((item, i) => (
               <div key={i} className="flex items-start gap-1 sm:gap-3">
                 <CheckCircle2 className={`${isMobile ? "w-2.5 h-2.5" : "w-4 h-4 sm:w-5 sm:h-5"} text-brand-accent shrink-0 mt-0.5`} />
-                <span className={isMobile ? "text-[8px] text-neutral-800 font-medium tracking-wide" : "text-xs sm:text-sm text-neutral-800 font-medium tracking-wide"}>
+                <span className={isMobile ? "text-[10px] text-neutral-800 font-medium tracking-wide" : "text-xs sm:text-sm text-neutral-800 font-medium tracking-wide"}>
                   {item}
                 </span>
               </div>
@@ -108,12 +108,12 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
           }`}>
             <div>
               <span className={`font-mono text-neutral-400 block tracking-widest uppercase ${
-                isMobile ? "text-[6.5px] mb-0.5" : "text-[10px] mb-1"
+                isMobile ? "text-[8.5px] mb-0.5" : "text-[10px] mb-1"
               }`}>
                 Estimated Starting Cost
               </span>
               <span className={`font-display font-black text-black ${
-                isMobile ? "text-xs" : "text-2xl sm:text-3xl"
+                isMobile ? "text-[14px]" : "text-2xl sm:text-3xl"
               }`}>
                 {service.startingPrice}
               </span>
@@ -122,7 +122,7 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
             <button
               onClick={() => handleBookNow(service.title)}
               className={`inline-flex items-center justify-center gap-1.5 bg-black hover:bg-neutral-900 font-mono font-bold tracking-widest uppercase transition-all duration-300 premium-glow-hover active:scale-95 ${
-                isMobile ? "px-2.5 py-1.5 text-[7px] rounded-lg" : "px-5 py-3 sm:px-6 sm:py-3.5 text-[10px] sm:text-xs rounded-xl"
+                isMobile ? "px-2.5 py-1.5 text-[9px] rounded-lg" : "px-5 py-3 sm:px-6 sm:py-3.5 text-[10px] sm:text-xs rounded-xl"
               }`}
             >
               <CalendarCheck className={isMobile ? "w-2.5 h-2.5 text-brand-accent" : "w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-accent"} />
@@ -193,7 +193,7 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
                          service.id === "alignment" ? "08" : 
                          service.id === "ac-service" ? "09" : "10"}
                       </span>
-                      <span className="font-display font-bold text-sm sm:text-base tracking-tight">
+                      <span className="font-display font-bold text-[15px] sm:text-base tracking-tight">
                         {service.title}
                       </span>
                     </div>

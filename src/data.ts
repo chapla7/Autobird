@@ -361,7 +361,7 @@ export const videoGallery: VideoItem[] = [
     id: 1,
     title: "Precision Detailing & Ceramic Application",
     description: "Watch our paint preservation masters apply multiple layers of elite 9H ceramic shielding in clean-air booths.",
-    videoUrl: "https://www.youtube.com/watch?v=ba7JNTI17uo",
+    videoUrl: "https://youtu.be/pWVwVaYAVlM?si=E22gpMRQOfOnjHHQ",
     coverImage: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200"
   },
   {

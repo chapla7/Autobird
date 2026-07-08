@@ -32,7 +32,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <section id="about" className="min-h-[80vh] md:h-auto py-8 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
+    <section id="about" className="h-[80vh] overflow-y-auto lg:overflow-visible md:h-auto py-8 md:py-24 bg-[#F8F8F6] relative overflow-hidden select-none flex flex-col justify-center">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial-beam opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
@@ -42,21 +42,21 @@ export default function AboutUs() {
           
           <div className="inline-flex items-center justify-center gap-2 mb-1 sm:mb-2 md:mb-4">
             <span className="w-8 h-[1.5px] bg-brand-accent animate-pulse" />
-            <span className="text-[7.5px] sm:text-[10px] md:text-xs font-mono font-bold tracking-[0.2em] uppercase text-brand-accent">
+            <span className="text-[9px] sm:text-[10px] md:text-xs font-mono font-bold tracking-[0.2em] uppercase text-brand-accent">
               OUR MISSION & IDENTITY
             </span>
             <span className="w-8 h-[1.5px] bg-brand-accent animate-pulse" />
           </div>
 
-          <h2 className="font-display font-black text-[18px] sm:text-3xl md:text-6xl text-black uppercase tracking-[0.1em] mb-2 md:mb-8 leading-none">
+          <h2 className="font-display font-black text-[19.5px] sm:text-3xl md:text-6xl text-black uppercase tracking-[0.1em] mb-2 md:mb-8 leading-none">
             PERSPECTIVE
           </h2>
 
-          <p className="font-display font-extrabold text-[10px] sm:text-lg md:text-2xl text-neutral-800 leading-relaxed tracking-tight italic">
+          <p className="font-display font-extrabold text-[11.5px] sm:text-lg md:text-2xl text-neutral-800 leading-relaxed tracking-tight italic">
             "We believe that maintaining a performance vehicle shouldn’t be a series of stressful negotiations — it should be a seamless, professional transaction."
           </p>
 
-          <p className="mt-2 sm:mt-8 text-neutral-500 font-light text-[8px] sm:text-sm md:text-base leading-relaxed">
+          <p className="mt-2 sm:mt-8 text-neutral-500 font-light text-[9.5px] sm:text-sm md:text-base leading-relaxed">
             Founded with a vision to deliver dealer-grade technical capability at transparent independent pricing, Autobird Garage has evolved into the region's premier multi-service automotive facility. We treat your vehicle with the exact same reverence and mechanical standard that Porsche, BMW, or Mercedes engineers intended.
           </p>
         </div>
@@ -85,19 +85,19 @@ export default function AboutUs() {
 
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-1 mb-1.5 sm:mb-4">
                     <div className="flex items-center gap-2 sm:gap-3">
-                      <span className="font-display font-black text-sm md:text-3xl text-brand-accent leading-none">
+                      <span className="font-display font-black text-[15.5px] md:text-3xl text-brand-accent leading-none">
                         {milestone.year}
                       </span>
-                      <h4 className="font-display font-bold text-[10.5px] sm:text-base md:text-lg text-black tracking-tight leading-none">
+                      <h4 className="font-display font-bold text-[12px] sm:text-base md:text-lg text-black tracking-tight leading-none">
                         {milestone.title}
                       </h4>
                     </div>
-                    <span className="text-[7.5px] sm:text-[10px] font-mono text-neutral-400 uppercase tracking-widest">
+                    <span className="text-[9px] sm:text-[10px] font-mono text-neutral-400 uppercase tracking-widest">
                       Milestone 0{idx + 1}
                     </span>
                   </div>
 
-                  <p className="text-[9.5px] sm:text-sm text-neutral-500 font-light leading-relaxed max-w-2xl">
+                  <p className="text-[11px] sm:text-sm text-neutral-500 font-light leading-relaxed max-w-2xl">
                     {milestone.description}
                   </p>
                 </div>

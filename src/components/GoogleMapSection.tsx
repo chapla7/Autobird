@@ -41,11 +41,11 @@ export default function GoogleMapSection() {
           {/* Right Column: Contact details & Call-To-Action (Col Span 5) */}
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div className="max-w-md">
-              <span className="text-[8px] sm:text-[10px] font-mono font-bold tracking-[0.3em] text-brand-accent uppercase block mb-1 sm:mb-3">
+              <span className="text-[7px] sm:text-[10px] font-mono font-bold tracking-[0.3em] text-brand-accent uppercase block mb-1 sm:mb-3">
                 MANUFACTURING HUB
               </span>
               
-              <h2 className="font-display font-black text-[22px] sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-none mb-3 sm:mb-10 uppercase">
+              <h2 className="font-display font-black text-[19px] sm:text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-none mb-3 sm:mb-10 uppercase">
                 VISIT OUR<br />COMPANY
               </h2>
 
@@ -53,12 +53,12 @@ export default function GoogleMapSection() {
                 
                 {/* Physical Address */}
                 <div>
-                  <h4 className="text-[7.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
+                  <h4 className="text-[6.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
                     CORPORATE HEADQUARTERS
                   </h4>
                   <div className="flex items-start gap-2 sm:gap-3">
                     <MapPin className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-brand-accent shrink-0 mt-0.5 animate-pulse" />
-                    <p className="text-[9.5px] sm:text-sm text-neutral-300 font-light leading-snug sm:leading-relaxed">
+                    <p className="text-[8.5px] sm:text-sm text-neutral-300 font-light leading-snug sm:leading-relaxed">
                       {address}
                       <span className="text-neutral-500 block mt-0.5">Mira Bhayandar, Maharashtra, India</span>
                     </p>
@@ -67,12 +67,12 @@ export default function GoogleMapSection() {
 
                 {/* Direct Line */}
                 <div>
-                  <h4 className="text-[7.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
+                  <h4 className="text-[6.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
                     CONTACT NUMBER
                   </h4>
                   <a
                     href={`tel:${phone}`}
-                    className="flex items-center gap-2 sm:gap-3 text-xs sm:text-lg md:text-xl font-display font-bold text-white hover:text-brand-accent transition-colors"
+                    className="flex items-center gap-2 sm:gap-3 text-[10.5px] sm:text-lg md:text-xl font-display font-bold text-white hover:text-brand-accent transition-colors"
                   >
                     <Phone className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-brand-accent shrink-0" />
                     <span>{phone}</span>
@@ -81,12 +81,12 @@ export default function GoogleMapSection() {
 
                 {/* Email Address */}
                 <div>
-                  <h4 className="text-[7.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
+                  <h4 className="text-[6.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
                     EMAIL ADDRESS
                   </h4>
                   <a
                     href={`mailto:${email}`}
-                    className="flex items-center gap-2 sm:gap-3 text-[10px] sm:text-sm text-neutral-300 hover:text-white transition-colors font-mono"
+                    className="flex items-center gap-2 sm:gap-3 text-[9px] sm:text-sm text-neutral-300 hover:text-white transition-colors font-mono"
                   >
                     <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-brand-accent shrink-0" />
                     <span>{email}</span>
@@ -95,10 +95,10 @@ export default function GoogleMapSection() {
 
                 {/* Hours */}
                 <div>
-                  <h4 className="text-[7.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
+                  <h4 className="text-[6.5px] sm:text-[9px] font-mono tracking-widest text-neutral-500 uppercase mb-0.5 sm:mb-2">
                     BUSINESS HOUR LOGS
                   </h4>
-                  <div className="flex items-center gap-2 sm:gap-3 text-[9.5px] sm:text-xs text-neutral-400">
+                  <div className="flex items-center gap-2 sm:gap-3 text-[8.5px] sm:text-xs text-neutral-400">
                     <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-neutral-600 shrink-0" />
                     <span>Monday - Saturday: 9:00 AM - 7:00 PM</span>
                   </div>
@@ -109,7 +109,7 @@ export default function GoogleMapSection() {
               {/* Get Directions Button */}
               <button
                 onClick={handleDirectionsClick}
-                className="mt-3.5 sm:mt-10 group relative inline-flex items-center gap-1.5 px-4 py-2.5 sm:px-6 sm:py-4 bg-brand-accent hover:bg-brand-accent-hover text-white text-[9.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 active:scale-95"
+                className="mt-3.5 sm:mt-10 group relative inline-flex items-center gap-1.5 px-4 py-2.5 sm:px-6 sm:py-4 bg-brand-accent hover:bg-brand-accent-hover text-white text-[8.5px] sm:text-xs font-mono font-bold tracking-widest uppercase rounded-lg sm:rounded-xl transition-all duration-300 active:scale-95"
               >
                 <Compass className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
                 GET DIRECTIONS

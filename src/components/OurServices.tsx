@@ -151,7 +151,7 @@ export default function OurServices({ onSelectService }: OurServicesProps) {
                 ELITE AUTOMOTIVE SERVICES
               </span>
             </div>
-            <h2 className="font-display font-black text-[15px] sm:text-3xl md:text-5xl lg:text-6xl text-black tracking-tight leading-none">
+            <h2 className="font-display font-black text-[16.5px] sm:text-3xl md:text-5xl lg:text-6xl text-black tracking-tight leading-none">
               Precision Care, Re-engineered.
             </h2>
           </div>

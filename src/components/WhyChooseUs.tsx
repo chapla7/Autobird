@@ -36,7 +36,7 @@ export default function WhyChooseUs() {
                   THE APEX STANDARD
                 </span>
               </div>
-              <h2 className="font-display font-black text-[13px] sm:text-3xl md:text-4xl lg:text-5xl text-black tracking-tight leading-tight">
+              <h2 className="font-display font-black text-[14.5px] sm:text-3xl md:text-4xl lg:text-5xl text-black tracking-tight leading-tight">
                 Designed for those who expect absolute precision.
               </h2>
               <p className="mt-1.5 md:mt-4 text-neutral-600 font-light text-[8px] sm:text-sm md:text-base leading-relaxed">
@@ -103,7 +103,7 @@ export default function WhyChooseUs() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: idx * 0.05 }}
-                    className="bg-white rounded-xl p-2 sm:p-4 border border-neutral-200/60 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_14px_rgba(0,0,0,0.04)] hover:border-brand-accent/20 transition-all flex items-start gap-2 sm:gap-4"
+                    className="bg-white rounded-xl p-2 sm:p-4 border border-neutral-200/60 shadow-[0_2px_8px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_14px_rgba(0,0,0,0.04)] hover:border-brand-accent/20 transition-all flex items-start gap-1.5 sm:gap-4"
                   >
                     {/* Circle icon emblem */}
                     <div className="flex items-center justify-center w-6 h-6 sm:w-10 sm:h-10 rounded-full bg-neutral-100 border border-neutral-200 text-brand-primary shrink-0">
@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
                     </div>
 
                     {/* Left content block */}
-                    <div className="flex-1 min-w-0">
+                    <div className="flex-1 min-w-0 pr-1 sm:pr-0">
                       <div className="flex items-center gap-1 sm:gap-2 flex-wrap">
                         <span className="text-[8px] sm:text-[10px] font-mono font-bold text-neutral-400">
                           {details.category}
@@ -121,16 +121,16 @@ export default function WhyChooseUs() {
                           0{card.id}
                         </span>
                       </div>
-                      <h4 className="font-display font-bold text-[10px] sm:text-sm text-neutral-900 mt-0.5 sm:mt-1">
+                      <h4 className="font-display font-bold text-[11.5px] sm:text-sm text-neutral-900 mt-0.5 sm:mt-1">
                         {card.title}
                       </h4>
-                      <p className="text-[8.5px] sm:text-xs text-neutral-500 font-light mt-0.5 sm:mt-1 leading-relaxed">
+                      <p className="text-[10px] sm:text-xs text-neutral-500 font-light mt-0.5 sm:mt-1 leading-relaxed">
                         {card.description}
                       </p>
                     </div>
 
                     {/* Right status block */}
-                    <div className="flex flex-col items-end justify-between self-stretch shrink-0 text-right">
+                    <div className="flex flex-col items-end justify-between self-stretch shrink-0 text-right max-w-[62px] sm:max-w-none">
                       <span className="text-[8px] sm:text-[10px] font-mono text-neutral-400">
                         {details.badge}
                       </span>

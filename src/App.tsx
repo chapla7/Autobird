@@ -18,10 +18,12 @@ import FAQSection from "./components/FAQSection";
 import BookingSection from "./components/BookingSection";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [selectedService, setSelectedService] = useState("");
+  const [currentPage, setCurrentPage] = useState<"home" | "privacy">("home");
 
   useEffect(() => {
     // 3 seconds duration for loader as specified by user
@@ -33,6 +35,10 @@ export default function App() {
 
   if (loading) {
     return <Loader onComplete={() => setLoading(false)} />;
+  }
+
+  if (currentPage === "privacy") {
+    return <PrivacyPolicy onBackToHome={() => setCurrentPage("home")} />;
   }
 
   return (
@@ -89,7 +95,7 @@ export default function App() {
       />
 
       {/* Universal Footer */}
-      <Footer />
+      <Footer onNavigatePrivacy={() => setCurrentPage("privacy")} />
 
       {/* Floating Interactive Concierge Button */}
       <FloatingWhatsApp />

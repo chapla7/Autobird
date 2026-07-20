@@ -5,14 +5,9 @@ import { Star, ShieldAlert, Award, Compass, ArrowUpRight } from "lucide-react";
 export default function AboutUs() {
   const milestones = [
     {
-      year: "2001",
+      year: "1986",
       title: "Founding in Grant Road",
       description: "Established our initial premium service and mechanical workshop in Grant Road, serving car owners with unmatched passion and dedication."
-    },
-    {
-      year: "2011",
-      title: "Relocation to Mira Road",
-      description: "Shifted to a much larger, fully-equipped state-of-the-art facility in Mira Road, multiplying our diagnostic bays and service capacity."
     },
     {
       year: "2017",
@@ -23,6 +18,11 @@ export default function AboutUs() {
       year: "2021",
       title: "Cashless Claims Network",
       description: "Inaugurated direct in-house cashless claims liaisons with leading insurers, removing administrative friction for our clients."
+    },
+    {
+      year: "2024",
+      title: "Relocation to Mira Road",
+      description: "Shifted to a much larger, fully-equipped state-of-the-art facility in Mira Road, multiplying our diagnostic bays and service capacity."
     },
     {
       year: "2026",

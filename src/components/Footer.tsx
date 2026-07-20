@@ -1,7 +1,11 @@
 import React from "react";
 import { Mail, Phone, MapPin, ShieldCheck, ArrowUpRight, Github, Heart, Instagram } from "lucide-react";
 
-export default function Footer() {
+interface FooterProps {
+  onNavigatePrivacy?: () => void;
+}
+
+export default function Footer({ onNavigatePrivacy }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   const handleScrollToSection = (id: string) => {
@@ -195,7 +199,12 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
-            <button className="hover:text-white transition-colors">Privacy Policy</button>
+            <button 
+              onClick={onNavigatePrivacy}
+              className="hover:text-white transition-colors cursor-pointer"
+            >
+              Privacy Policy
+            </button>
             <span>•</span>
             <button className="hover:text-white transition-colors">Terms of Care Service</button>
             <span>•</span>
